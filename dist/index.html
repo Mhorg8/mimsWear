@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIMS-WEAR</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- yekan font link -->
+    <link rel="stylesheet" href="font.css" />
+    <!-- remix icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+      integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-yekan box-border">
+    <header
+      class="container py-6 px-4 bg-white fixed top-10 left-0 right-0 z-50"
+    >
+      <!--  this is for navigation -->
+      <nav
+        class="navbar flex items-center justify-center gap-x-14 md:gap-x-0 md:justify-between"
+      >
+        <!-- hamburger menu -->
+        <div id="hamburger-menu" class="lg:hidden z-20 text-black">
+          <i class="ri-menu-3-line font-bold text-xl"></i>
+        </div>
+        <ul class="main-menu lg:flex gap-x-5">
+          <li class="nav-item">
+            <a class="nav-link nav-active" href="#home">صفحه اصلی</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">پوشاک آقایان و بانوان</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">شبکه های اجتماعی</a>
+          </li>
+
+          <ul
+            class="secondary-menu lg:hidden items-center flex flex-col gap-y-5"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">فروش و شعب</a>
+            </li>
+            <li class="nav-item relative">
+              <a class="searchBarBtn" class="nav-link" href="#"
+                >جستجوی محصولات</a
+              >
+              <input
+                type="text"
+                class="searcbar absolute -bottom-24 -left-2"
+                placeholder="جستوجو کنید"
+              />
+            </li>
+            <!-- have action icons shoping card and profile -->
+            <div class="action-icons flex items-center gap-x-3">
+              <i
+                class="ri-shopping-bag-line font-medium text-xl nav-active cursor-pointer"
+              ></i>
+              <i
+                class="ri-user-3-line font-medium text-xl nav-active cursor-pointer"
+              ></i>
+            </div>
+          </ul>
+        </ul>
+        <!-- logo -->
+        <div class="logo-container">
+          <a href="#home" class="font-extrabold text-xl z-20">پوشاکــ میــم</a>
+        </div>
+        <!-- secondary-menu -->
+        <ul class="secondary-menu hidden lg:flex items-center gap-x-5">
+          <li class="nav-item">
+            <a class="text-gray-color" href="#">فروش و شعب</a>
+          </li>
+          <li class="nav-item relative">
+            <a class="text-gray-color searchBarBtn" href="#">جستجوی محصولات</a>
+            <input
+              type="text"
+              class="searcbar absolute -bottom-[60px] left-0"
+              placeholder="جستوجو کنید"
+            />
+          </li>
+          <!-- have action icons shoping card and profile -->
+          <div class="action-icons flex items-center gap-x-3">
+            <i
+              class="ri-shopping-bag-line font-medium text-xl nav-active cursor-pointer"
+            ></i>
+            <i
+              class="ri-user-3-line font-medium text-xl nav-active cursor-pointer"
+            ></i>
+          </div>
+        </ul>
+        <!-- have action icons shoping card and profile -->
+        <div
+          class="lg:hidden action-icons flex items-center gap-x-3 cursor-pointer"
+        >
+          <i class="ri-shopping-bag-line font-medium text-xl nav-link"></i>
+          <i class="ri-user-3-line font-medium text-xl nav-link"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- landing page -->
+      <section id="home" class="bg-light-color w-full h-[100vh]">
+        <div
+          class="flex flex-col items-center justify-center w-full h-full container relative"
+        >
+          <!-- landing page heading -->
+          <div class="mb-28">
+            <h1 class="heading mb-14 lg:mb-2 relative">
+              کـالـکشـن بهـاره <br />
+              <span>پوشـاکـــ میـم</span>
+
+              <div
+                class="landing-star-img w-[40px] h-[40px] absolute left-0 top-[120%]"
+              >
+                <img
+                  class="text-primary-color"
+                  src="../images/star2.png"
+                  alt=""
+                />
+              </div>
+            </h1>
+            <div class="flex gap-x-16 items-center my-7">
+              <button class="btn-primary">محصولات</button>
+              <a href="#" class="text-lg font-[600] flex items-center gap-x-2"
+                >مشاوره
+                <i
+                  class="ri-arrow-left-s-line rounded-full w-5 h-5 bg-primary-color flex items-center justify-center"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+
+          <!-- landingpage darkBox for ditails -->
+          <div
+            class="lg:absolute -bottom-10 lg:bottom-5 w-full py-3 grid md:grid-cols-6 grid-cols-2 flex-wrap gap-y-7 items-center justify-between bg-dark-color"
+          >
+            <div class="text-light-color text-xl text-center col-span-1">
+              <h2 class="font-bold text-2xl">370+</h2>
+              <p class="text-base">خرید موفق</p>
+            </div>
+
+            <div class="text-light-color text-xl text-center col-span-1">
+              <h2 class="font-bold text-2xl">659+</h2>
+              <p class="text-base">محصول موجود</p>
+            </div>
+
+            <div
+              class="hidden lg:inline-block text-light-color relative text-xl text-center order-1 h-[130px] lg:order-3 col-span-6 lg:col-span-2"
+            >
+              <img
+                class="h-[320px] w-full object-contain object-center absolute -bottom-7"
+                src="/images/Removal-448.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="text-light-color text-xl text-center col-span-1 lg:order-4"
+            >
+              <h2 class="font-bold text-2xl">230+</h2>
+              <p class="text-base">ثبت رضایت</p>
+            </div>
+
+            <div
+              class="text-light-color text-xl text-center col-span-1 lg:order-5"
+            >
+              <h2 class="font-bold text-2xl">22+</h2>
+              <p class="text-base">جایزه کشوری</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- suggests-->
+      <section id="suggests w-full">
+        <div
+          class="container py-10 px-0 w-full my-7 flex flex-col items-center justify-center relative"
+        >
+          <!-- heading -->
+          <div class="mb-28">
+            <h1 class="heading heading-secondary mb-14 lg:mb-2">
+              پیشنهادات <span>ویژه</span><br />
+            </h1>
+            <div class="flex gap-x-16 items-center my-7">
+              <a href="#" class="font-[600] flex items-center gap-x-2"
+                >مشاهده همه
+                <i
+                  class="ri-arrow-left-s-line rounded-full w-5 h-5 bg-primary-color flex items-center justify-center"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+
+          <!-- suggests -->
+          <!--   -->
+          <div class="suggests w-full relative h-full">
+            <div id="suggestSlider" class="wrapper slider py-5 w-full"></div>
+            <button
+              id="prev-btn"
+              class="slider-prev-btn slider-btn lg:inline-block -bottom-20 left-0 z-40"
+            >
+              <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <button
+              id="next-btn"
+              class="slider-next-btn slider-btn lg:inline-block -bottom-20 right-0 z-40"
+            >
+              <i class="ri-arrow-right-s-line"></i>
+            </button>
+          </div>
+
+          <div
+            class="pattern w-[200px] lg:w-[300px] h-[300px] lg:h-[400px] absolute left-[50%] top-[25%] opacity-60 rounded-lg mix-blend-color-burn -z-10 rotate-90"
+          >
+            <img
+              class="w-full h-full rounded-lg"
+              src="/images/pattern.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- small banners -->
+
+          <div
+            class="small-banner w-full h-full flex flex-col lg:flex-row flex-wrap items-center justify-between my-[200px]"
+          >
+            <!-- first box -->
+            <div class="lg:h-[350px] h-[200px] w-full lg:w-1/2 bg-light-color">
+              <div
+                class="banner-text-content flex items-center justify-center h-full w-full bg-primary-color"
+              >
+                <h3
+                  class="font-bold text-center text-[36px] md:text-[40px] text-light-color"
+                >
+                  ترند ترین محصولات <br />دنیایی مد
+                </h3>
+              </div>
+            </div>
+
+            <!-- second box -->
+            <div class="w-full lg:w-1/2 lg:h-[350px] h-[200px]">
+              <img
+                class="w-full h-full object-cover"
+                src="../images/banelsiaga.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section newest products -->
+      <section id="products" class="bg-dark-color h-full w-full py-5">
+        <div class="container py-5 w-full h-full relative px-0">
+          <!-- heading -->
+          <div
+            class="text-center text-[38px] lg:text-[50px] text-light-color font-semibold mb-14 lg:mb-28 z-30"
+          >
+            <h1 class="pt-10">
+              آخـریـن
+              <span class="text-primary-color font-bold">محـصولات</span>
+              سـایـت<br />
+            </h1>
+            <div class="flex gap-x-16 items-center my-7">
+              <a
+                href="#"
+                class="text-[16px] w-full font-[500] flex items-center justify-center gap-x-2"
+                >مشـاهده همـه
+                <i
+                  class="ri-arrow-left-s-line rounded-full w-5 h-5 bg-primary-color flex items-center justify-center"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+
+          <!-- products -->
+
+          <div
+            id="product-wrapper"
+            class="product-wrapper relative container w-full my-7 wrapper slider px-0 py-5"
+          ></div>
+          <!-- slider btns -->
+          <button
+            id="prev-btn"
+            class="slider-prev-btn slider-btn lg:inline-block -bottom-5 left-5 z-40"
+          >
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <button
+            id="next-btn"
+            class="slider-next-btn slider-btn lg:inline-block -bottom-5 right-5 z-40"
+          >
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+
+          <!-- patterns -->
+          <div
+            class="pattern absolute left-[20%] bottom-[10%] rotate-90 opacity-50 rounded-lg"
+          >
+            <img
+              class="w-full h-full rounded-lg"
+              src="/images/pattern.jpg"
+              alt=""
+            />
+          </div>
+          <!-- patterns -->
+
+          <div
+            class="pattern hidden md:inline-block absolute right-[0%] top-[10%] opacity-50 rounded-lg"
+          >
+            <img
+              class="w-full h-full rounded-lg"
+              src="/images/pattern.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- comments -->
+      <section id="comments">
+        <div class="container relative">
+          <!-- heading -->
+          <div class="my-28">
+            <h1 class="heading text-center heading-secondary mb-14 lg:mb-2">
+              نظرات <span>مشتریان</span><br />
+            </h1>
+            <div class="flex justify-center gap-x-16 items-center my-7">
+              <a href="#" class="font-[600] flex items-center gap-x-2"
+                >مشاهده همه
+                <i
+                  class="ri-arrow-left-s-line rounded-full w-5 h-5 bg-primary-color flex items-center justify-center"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+          <!-- comments -->
+          <div
+            class="comments-wrapper grid grid-cols-1 gap-x-3 gap-y-10 lg:grid-cols-2 items-center justify-center mt-40 relative z-10 w-full"
+          >
+            <!-- comment 1 -->
+            <div class="flex items-center justify-center relative md:gap-x-3">
+              <!-- user comment -->
+              <div
+                class="flex-1 flex items-center justify-center bg-white shadow-md py-5 translate-y-[15%] px-3 md:translate-y-[30%]"
+              >
+                <p class="w-full max-w-[250px] text-center text-gray-color">
+                  من اخیراً یک تی‌شرت و یک جفت شلوار از برند میم خریدم و واقعاً
+                  از کیفیتشان خیلی راضی هستم! پارچه‌ها با کیفیت بالا و دوخت‌ها
+                  عالی بودندهمچنین طراحی‌هایشان بسیار جذاب و مدرن هستند.
+                </p>
+              </div>
+              <!-- user info -->
+              <div
+                id="userCommentBox"
+                class="flex-1 max-w-[200px] flex flex-col gap-y-10 items-center justify-start bg-white py-10 shadow-lg h-[350px] rounded-t-full rounded-md"
+              >
+                <!-- user img -->
+                <div class="h-[90px] w-[90px] rounded-[50%] shadow-md">
+                  <img
+                    id="userImgEl"
+                    class="w-full h-full object-cover rounded-[50%]"
+                    src="../images/ubran-hoodi4.jpeg"
+                    alt=""
+                  />
+                </div>
+                <!-- user name and job -->
+
+                <div class="text-center">
+                  <h3
+                    id="userName"
+                    class="font-semibold text-dark-color text-lg"
+                  >
+                    محمد نوری
+                  </h3>
+                  <h3 id="userType" class="text-gray-color">خریدار پیراهن</h3>
+                </div>
+
+                <!-- user massages -->
+
+                <div class="text-center border-b border-gray-color pb-3">
+                  <h2 id="userText" class="font-bold text-lg text-dark-color">
+                    خرید فوق العاده!
+                  </h2>
+                  <h3 id="userRate" class="font-semibold">
+                    <i class="ri-star-fill text-primary-color"></i> 4.8
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- comment 2 -->
+            <div class="flex items-center justify-center relative md:gap-x-3">
+              <!-- user info -->
+              <div
+                id="userCommentBox"
+                class="flex-1 max-w-[200px] flex flex-col gap-y-10 items-center justify-start bg-white py-10 shadow-lg h-[350px] rounded-t-full rounded-md"
+              >
+                <!-- user img -->
+                <div class="h-[90px] w-[90px] rounded-[50%] shadow-md">
+                  <img
+                    id="userImgEl"
+                    class="w-full h-full object-cover rounded-[50%]"
+                    src="../images/cahpter.jpeg"
+                    alt=""
+                  />
+                </div>
+                <!-- user name and job -->
+
+                <div class="text-center">
+                  <h3
+                    id="userName"
+                    class="font-semibold text-dark-color text-lg"
+                  >
+                    محمد حسین عیلرضایی
+                  </h3>
+                  <h3 id="userType" class="text-gray-color">خریدار پیراهن</h3>
+                </div>
+
+                <!-- user massages -->
+
+                <div class="text-center border-b border-gray-color pb-3">
+                  <h2 id="userText" class="font-bold text-lg text-dark-color">
+                    قیمت مناسب
+                  </h2>
+                  <h3 id="userRate" class="font-semibold">
+                    <i class="ri-star-fill text-primary-color"></i> 4.7
+                  </h3>
+                </div>
+              </div>
+
+              <!-- user comment -->
+              <div
+                class="flex-1 flex items-center justify-center bg-white shadow-md py-5 translate-y-[15%] px-3 md:translate-y-[30%]"
+              >
+                <p class="w-full max-w-[250px] text-center text-gray-color">
+                  برخورد فروشنده‌ها نیز بسیار مهربان و حرفه‌ای بود. این تجربه
+                  خرید برای من بسیار خوشایند بود و مطمئناً در آینده از محصولات
+                  برند میم استفاده خواهم کرد.
+                </p>
+              </div>
+            </div>
+
+            <!-- <button
+              id="prev-btn"
+              class="slider-prev-btn slider-btn lg:inline-block -bottom-14 md:-bottom-10 left-5 z-40"
+            >
+              <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <button
+              id="next-btn"
+              class="slider-next-btn slider-btn lg:inline-block -bottom-14 md:-bottom-10 right-5 z-40"
+            >
+              <i class="ri-arrow-right-s-line"></i>
+            </button> -->
+          </div>
+          <!-- blogs -->
+          <div class="w-full h-full mt-38" id="blogs">
+            <div class="blog-wrapper relative">
+              <!-- heading -->
+              <div class="my-28 relative z-20">
+                <h1 class="heading text-center heading-secondary mb-14 lg:mb-2">
+                  مطالبی <span>خواندن</span><br />
+                </h1>
+                <div
+                  class="flex justify-center gap-x-16 items-center my-7 relative"
+                >
+                  <a href="#" class="font-[600] flex items-center gap-x-2"
+                    >مشاهده همه
+                    <i
+                      class="ri-arrow-left-s-line rounded-full w-5 h-5 bg-primary-color flex items-center justify-center"
+                    >
+                    </i>
+                  </a>
+
+                  <img
+                    class="w-[30px] h-[30px] object-cover translate-y-1/2 absolute left-[25%]"
+                    src="/images/star2.png"
+                    alt=""
+                  />
+                </div>
+                <!-- star -->
+                <img
+                  class="w-[50px] h-[50px] object-cover absolute -top-[70%] left-[40%]"
+                  src="/images/star2.png"
+                  alt=""
+                />
+              </div>
+              <!-- pattern -->
+
+              <div
+                class="blogs relative w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center -bottom-10"
+              >
+                <!-- blog post -->
+                <div
+                  class="blog-post max-w-[300px] flex flex-col gap-y-3 items-center justify-center rounded-2xl p-3 bg-white shadow-2xl mx-auto"
+                >
+                  <!-- blog img content -->
+                  <div
+                    class="image-content max-w-[350px] w-[280px] h-[300px] relative"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      src="/images/banelsiaga.jpeg"
+                      alt=""
+                    />
+                    <!-- hover btns -->
+                    <div
+                      id="blogPostBtns"
+                      class="w-full flex items-center gap-x-10 justify-center absolute bottom-3"
+                    >
+                      <button class="blog-btn">
+                        <i class="ri-thumb-up-line text-blue-400"></i>
+                      </button>
+                      <button class="blog-btn">
+                        <i class="ri-fire-line text-orange-500"></i>
+                      </button>
+                      <button class="blog-btn">
+                        <i class="ri-thumb-down-line text-red-500"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- blog text content -->
+                  <div>
+                    <h3 class="font-medium max-w-[280px]">
+                      چه چیزی تو سر طراحان بالنسیگا میگذرد
+                    </h3>
+                    <p class="text-gray-color mt-3">
+                      <i
+                        class="ri-checkbox-circle-fill align-middle text-blue-500"
+                      ></i>
+                      محمد حسین علیرضایی
+                    </p>
+                  </div>
+                </div>
+
+                <!-- blog post 2 -->
+                <div
+                  class="blog-post max-w-[300px] flex flex-col gap-y-3 items-center justify-center rounded-2xl p-3 bg-white shadow-2xl mx-auto"
+                >
+                  <!-- blog img content -->
+                  <div
+                    class="image-content w-[280px] max-w-[350px] h-[300px] relative"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      src="/images/jordan4.jpeg"
+                      alt=""
+                    />
+                    <!-- hover btns -->
+                    <div
+                      id="blogPostBtns"
+                      class="w-full flex items-center gap-x-10 justify-center absolute bottom-3"
+                    >
+                      <button class="blog-btn">
+                        <i class="ri-thumb-up-line text-blue-400"></i>
+                      </button>
+                      <button class="blog-btn">
+                        <i class="ri-fire-line text-orange-500"></i>
+                      </button>
+                      <button class="blog-btn">
+                        <i class="ri-thumb-down-line text-red-500"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- blog text content -->
+                  <div>
+                    <h3 class="font-medium max-w-[280px]">
+                      داستان ساخت کتونی جردن
+                    </h3>
+                    <p class="text-gray-color mt-3">
+                      <i
+                        class="ri-checkbox-circle-fill align-middle text-blue-500"
+                      ></i>
+                      محمد حسین علیرضایی
+                    </p>
+                  </div>
+                </div>
+
+                <!-- blog post 3-->
+                <div
+                  class="blog-post max-w-[300px] flex flex-col gap-y-3 items-center justify-center rounded-2xl p-3 bg-white shadow-2xl mx-auto"
+                >
+                  <!-- blog img content -->
+                  <div
+                    class="image-content w-[280px] max-w-[350px] h-[300px] relative"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      src="/images/conversAmiri.jpeg"
+                      alt=""
+                    />
+                    <!-- hover btns -->
+                    <div
+                      id="blogPostBtns"
+                      class="w-full flex items-center gap-x-10 justify-center absolute bottom-3"
+                    >
+                      <button class="blog-btn">
+                        <i class="ri-thumb-up-line text-blue-400"></i>
+                      </button>
+                      <button class="blog-btn">
+                        <i class="ri-fire-line text-orange-500"></i>
+                      </button>
+                      <button class="blog-btn">
+                        <i class="ri-thumb-down-line text-red-500"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- blog text content -->
+                  <div>
+                    <h3 class="font-medium max-w-[280px]">
+                      همه چیز درباره برند AMIRI
+                    </h3>
+                    <p class="text-gray-color mt-3">
+                      <i
+                        class="ri-checkbox-circle-fill align-middle text-blue-500"
+                      ></i>
+                      محمد حسین علیرضایی
+                    </p>
+                  </div>
+                </div>
+
+                <img
+                  class="absolute select-none w-[200px] h-[300px] left-[0] top-[30%] -z-10 -light rounded-s-2xl rounded-b-2xl"
+                  src="/images/pattern.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-dark-color h-full py-10">
+      <div
+        class="container border-t border-gray-color pt-10 flex flex-wrap items-center justify-between"
+      >
+        <!-- social links -->
+        <div class="flex flex-col gap-y-5 justify-start items-start">
+          <h3 class="font-bold text-xl text-light-color">شبکه های اجتماعی</h3>
+          <ul class="sociail-links flex items-center gap-x-5">
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><i class="ri-instagram-line social-icon"></i
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><i class="ri-telegram-line social-icon"></i
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><i class="ri-youtube-line social-icon"></i
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><i class="ri-github-line social-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <!-- contact us -->
+
+        <div
+          class="flex flex-col md:flex-row flex-wrap justify-between gap-y-5 md:gap-x-16 my-3"
+        >
+          <div>
+            <h3 class="font-bold text-xl text-light-color">شماره تلفن :</h3>
+            <pre class="text-sm text-white">09334055539</pre>
+            <pre class="text-sm text-white">09334055539</pre>
+          </div>
+
+          <div class="max-w-[300px]">
+            <h3 class="font-bold text-xl text-light-color">
+              آدرس شعبه تهران :
+            </h3>
+            <p class="text-sm text-white w-full text-wrap">
+              تهران خیابان ستارخان بازاز سنتی ستارخان
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-xl text-light-color">ایمیل :</h3>
+            <pre class="text-sm text-white">mohammadalirezaie081@gmail.com</pre>
+          </div>
+        </div>
+
+        <!-- E namad -->
+        <div class="w-[150px] h-[150px]">
+          <img
+            class="h-full w-full object-cover"
+            src="../images/enamad-1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
